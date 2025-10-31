@@ -1,6 +1,6 @@
 # Radar Tracking System
 
-Real-time radar tracking system coded with microservices structure.
+Real-time radar tracking system simulation coded with microservices structure. 
 
 ## Used technology
 - Frontend: React, Leaflet
@@ -52,7 +52,7 @@ cd ui-service && npm start
 - **MongoDB**: https://localhost:27017
 - **Real-time UI**: https://localhost:3000
 
-## 📊 Data Flow
+## Data Flow
 
 ```
 RadarService → new_track topic → IFFService
@@ -64,9 +64,9 @@ WebSocketService ← ← ← ← ← ← ← ← ← ← ←
 Real-time UI
 ```
 
-## 🔧 Configuration
+## Configuration
 
-Servisler `appsettings.json` dosyalarından konfigürasyon alır:
+Services is configured by `appsettings.json`:
 
 ```json
 {
@@ -80,12 +80,12 @@ Servisler `appsettings.json` dosyalarından konfigürasyon alır:
 }
 ```
 
-## 📝 Kafka Topics
+## Kafka Topics
 
 - `new_track`: New tracks (RadarService → IFFService)
 - `update_track`: IFF enriched + position updates (other services → WebSocketService)
 
-## 🛠️ Development
+## Development
 
 ```bash
 # Build all projects
