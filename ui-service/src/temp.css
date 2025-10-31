@@ -1,0 +1,53 @@
+.container {
+  position: relative;
+  height: 100vh;
+}
+
+.control-panel {
+  position: absolute;
+  top: 468px;
+  left: -65px;
+  z-index: 1000;
+  width: 280px;
+  background: transparent;
+  border-radius: 8px;
+  padding: 75px;
+  
+}
+
+.control-panel h3 {
+  color: #2E7D32;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Buton stili */
+.btn {
+  padding: 3px 5%;
+  margin: 4px 0;
+  border: none;
+  border-radius: 122px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.btn-start {
+  background: #4CAF50;
+  color: white;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn-stop {
+  background: #f44336;
+  color: white;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn-clear {
+  background: red;
+  color: white;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
